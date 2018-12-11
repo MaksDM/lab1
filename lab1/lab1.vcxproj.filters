@@ -21,9 +21,15 @@
     <ClCompile Include="Exception.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="Train.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exception.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Train.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
