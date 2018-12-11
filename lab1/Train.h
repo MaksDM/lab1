@@ -1,22 +1,22 @@
-#pragma once
+ï»¿#pragma once
 #include <string>
 #include <iostream>
 #include "Exception.hpp"
 
 class Train{
-	std::string station;//ïóíêò íàçíà÷åíèÿ
-	int number;//íîìåð ïîåçäà
-	std::string time;//âðåìÿ îòïðàâëåíèÿ
+	std::string station;//Ð¿ÑƒÐ½ÐºÑ‚ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ
+	int number;//Ð½Ð¾Ð¼ÐµÑ€ Ð¿Ð¾ÐµÐ·Ð´Ð°
+	std::string time;//Ð²Ñ€ÐµÐ¼Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ
 public:
 	Train(const std::string station = "", const std::string time = "", int number = 0);
 	Train(const Train& t);
 	~Train();
-	/*ãåòòåðû è ñåòòåðû*/
+	/*Ð³ÐµÑ‚Ñ‚ÐµÑ€Ñ‹ Ð¸ ÑÐµÑ‚Ñ‚ÐµÑ€Ñ‹*/
 	std::string& Station();
 	std::string& Time();
 	int& Number();
-	/*îïåðàòîðû ââîäà è âûâîäà*/
+	/*Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹ Ð²Ð²Ð¾Ð´Ð° Ð¸ Ð²Ñ‹Ð²Ð¾Ð´Ð°*/
 	friend std::istream& operator >>(std::istream& in, Train& t);
 	friend std::ostream& operator <<(std::ostream& out, const Train& t);
-	Train& operator =(const Train& t);//îïåðàòîð ïðèñâàèâàíèÿ
+	Train& operator =(const Train& t);//Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°Ð½Ð¸Ñ
 };													  
